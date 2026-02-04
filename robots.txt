@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the main site
+Allow: /index.php
+Allow: /products.php
+Allow: /contact.php
+Allow: /uploads/
+Allow: /assets/
+
+# Disallow admin area from being indexed
+Disallow: /admin/
+
+# Disallow sensitive files
+Disallow: /config.php
+Disallow: /lang.php
+Disallow: /mail.php
+Disallow: /*.sql
+Disallow: /contact_log.txt
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 1
